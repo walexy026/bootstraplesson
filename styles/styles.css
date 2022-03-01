@@ -1,6 +1,43 @@
-.navbar {
+.collapse {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%;
+}
+
+.collapse .form_a {
+  width: 300px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.collapse .form_a input {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.collapse .form_a button {
+  background: none;
+  border: none;
+}
+
+.collapse .nav-link {
+  color: aliceblue;
+}
+
+.collapse .signup {
+  background-color: blue;
+  color: azure;
+  border-radius: 5px;
+}
+
+.collapse .signup .signup:hover {
+  color: azure;
+  background-color: aquamarine;
 }
 /*# sourceMappingURL=styles.css.map */

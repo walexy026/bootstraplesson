@@ -1,4 +1,32 @@
-.navbar{
+.collapse{
     justify-content: space-around;
-    width: 100%;
+    .form_a{
+        width: 300px;
+        justify-content: center;
+        display: flex;
+        border: 1px solid black;
+        border-radius: 5px;
+        input{
+            border: none;
+            background: none;
+            outline: none;
+        }
+        button{
+            background: none;
+            border: none;
+        }
+    }
+    .nav-link{
+        color: aliceblue;
+    
+    }
+    .signup{
+        background-color: blue;
+        color: azure;
+        border-radius: 5px;
+        .signup:hover{
+            color: azure;
+            background-color: aquamarine;
+        }
+    }
 }
