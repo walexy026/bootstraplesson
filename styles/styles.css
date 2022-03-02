@@ -5,6 +5,7 @@ body {
 
 .container {
   background-color: transparent;
+  width: 100%;
 }
 
 .collapse {
@@ -13,41 +14,44 @@ body {
 }
 
 .collapse .form_a {
-  width: 300px;
+  margin: auto;
+  width: 25vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid black;
   border-radius: 5px;
 }
 
 .collapse .form_a input {
-  border: none;
+  border: 1px solid black;
   background: none;
   outline: none;
+  width: 25vw;
 }
 
-.collapse .form_a button {
-  background: none;
-  border: none;
-}
-
-.collapse .nav-link {
-  color: green;
+.collapse .form_a svg {
+  position: absolute;
+  right: 50vw;
+  margin-top: 12px;
 }
 
 .collapse .signup {
-  background-color: black;
-  color: white;
   border-radius: 5px;
 }
 
-.collapse .signup .signup:hover {
-  color: azure;
-  background-color: aquamarine;
+.collapse .signup a {
+  background-color: black;
+  color: white !important;
+}
+
+.collapse .signup a:hover {
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: transparent;
+  color: black !important;
 }
 
 .text {
@@ -85,24 +89,40 @@ body {
   border: 1px solid black;
 }
 
-.img img:nth-child(1) {
-  position: absolute;
-  z-index: -1;
-  top: -300px;
-  right: -150px;
+.row .flow {
+  overflow-x: hidden;
 }
 
-.img img:nth-child(2) {
-  position: absolute;
-}
-
-.img img:nth-child(3) {
-  position: absolute;
+.row .flow1 .fluid {
   display: none;
 }
 
-@media screen and (max-width: 780px) {
-  .img img:nth-child(3) .img:nth-child(3) {
+@media screen and (max-width: 800px) {
+  .row .flow1 .fluid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.course:hover {
+  border-bottom: 2px solid black;
+}
+
+@media screen and (max-width: 980px) {
+  .form-control {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .bi {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .flow {
     display: none;
   }
 }
