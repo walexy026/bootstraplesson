@@ -1,5 +1,4 @@
 body {
-  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
 }
 
@@ -59,8 +58,8 @@ body {
 }
 
 .text h2 {
-  line-height: 10vh;
-  font-size: 5vw;
+  line-height: 15vh;
+  font-size: 60px;
   font-weight: 600;
 }
 
@@ -93,12 +92,12 @@ body {
   overflow-x: hidden;
 }
 
-.row .flow1 .fluid {
+.flow1 .fluid {
   display: none;
 }
 
 @media screen and (max-width: 800px) {
-  .row .flow1 .fluid {
+  .flow1 .fluid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

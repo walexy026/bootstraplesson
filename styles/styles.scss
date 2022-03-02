@@ -1,5 +1,5 @@
 body {
-    overflow-x: hidden;
+    // overflow-x: hidden;
     font-family: "Poppins", sans-serif;
 }
 .container {
@@ -57,9 +57,9 @@ body {
 .text {
     padding-top: 10vh;
     h2 {
-        line-height: 10vh;
+        line-height: 15vh;
         // font-weight: bolder;
-        font-size: 5vw;
+        font-size: 60px;
         font-weight: 600;
     }
     h6 {
@@ -93,6 +93,7 @@ body {
 .row{
     .flow{
         overflow-x: hidden;
+        }
     }
     .flow1{
         .fluid{
@@ -102,7 +103,7 @@ body {
             }
         }
     }
-}
+
 
 .course:hover {
     border-bottom: 2px solid black;
