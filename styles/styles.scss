@@ -1,32 +1,98 @@
-.collapse{
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    background-color: transparent;
+}
+.collapse {
     justify-content: space-around;
-    .form_a{
+    .form_a {
         width: 300px;
         justify-content: center;
         display: flex;
         border: 1px solid black;
         border-radius: 5px;
-        input{
+        input {
             border: none;
             background: none;
             outline: none;
         }
-        button{
+        button {
             background: none;
             border: none;
         }
     }
-    .nav-link{
-        color: aliceblue;
-    
+    .nav-link {
+        color: green;
     }
-    .signup{
-        background-color: blue;
-        color: azure;
+    .signup {
+        background-color: black;
+        color: white;
         border-radius: 5px;
-        .signup:hover{
+        .signup:hover {
             color: azure;
             background-color: aquamarine;
+        }
+    }
+}
+// .row{
+//     overflow-x: hidden;
+// }
+.text {
+    padding-top: 10vh;
+    h2 {
+        line-height: 10vh;
+        // font-weight: bolder;
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    h6 {
+        // line-height: 10vh;
+        font-size: 16px;
+        line-height: 1.7;
+        font-weight: 400;
+    }
+    a{
+        border: 1.5px solid #150c21;
+        background-color: #150c21;
+        border-radius: 10px;
+        color: #fff;
+        // box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-decoration: none;
+        line-height: 20vh;
+    }
+       a:hover {
+            color: black;
+            background-color: #fff;
+            border: 1px solid black;
+        }
+        // a:hover {
+
+        // }
+    }
+
+.img {
+    img:nth-child(1) {
+        position: absolute;
+        z-index: -1;
+        top: -300px;
+        right: -150px;
+    }
+    img:nth-child(2) {
+        position: absolute;
+    }
+    img:nth-child(3) {
+        position: absolute;
+        display: none;
+        @media screen and (max-width: 780px) {
+            .img:nth-child(3) {
+                display: none;
+            }
         }
     }
 }

@@ -1,3 +1,12 @@
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-color: transparent;
+}
+
 .collapse {
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -27,17 +36,74 @@
 }
 
 .collapse .nav-link {
-  color: aliceblue;
+  color: green;
 }
 
 .collapse .signup {
-  background-color: blue;
-  color: azure;
+  background-color: black;
+  color: white;
   border-radius: 5px;
 }
 
 .collapse .signup .signup:hover {
   color: azure;
   background-color: aquamarine;
+}
+
+.text {
+  padding-top: 10vh;
+}
+
+.text h2 {
+  line-height: 10vh;
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+.text h6 {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+.text a {
+  border: 1.5px solid #150c21;
+  background-color: #150c21;
+  border-radius: 10px;
+  color: #fff;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  line-height: 20vh;
+}
+
+.text a:hover {
+  color: black;
+  background-color: #fff;
+  border: 1px solid black;
+}
+
+.img img:nth-child(1) {
+  position: absolute;
+  z-index: -1;
+  top: -300px;
+  right: -150px;
+}
+
+.img img:nth-child(2) {
+  position: absolute;
+}
+
+.img img:nth-child(3) {
+  position: absolute;
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .img img:nth-child(3) .img:nth-child(3) {
+    display: none;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
