@@ -1,5 +1,5 @@
 body {
-    // overflow-x: hidden;
+    overflow-x: hidden;
     font-family: "Poppins", sans-serif;
 }
 .container {
@@ -57,9 +57,9 @@ body {
 .text {
     padding-top: 10vh;
     h2 {
-        line-height: 15vh;
+        line-height: 10vh;
         // font-weight: bolder;
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 600;
     }
     h6 {
@@ -91,11 +91,12 @@ body {
     // }
 }
 .row{
-    .flow{
-        overflow-x: hidden;
+    .flow1{
+        z-index: -1;
+        position: absolute;
         }
     }
-    .flow1{
+    .flow2{
         .fluid{
             display: none;
             @media screen and (max-width:800px) {
