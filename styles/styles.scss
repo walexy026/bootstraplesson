@@ -1,4 +1,5 @@
 body {
+    // overflow-y: hidden;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
 }
@@ -19,15 +20,17 @@ body {
 
         // }
         input {
-            border: 1px solid black ;
+            border: 1px solid black;
             background: none;
             outline: none;
             width: 25vw;
         }
         svg {
             position: absolute;
-            right: 50vw;
+            right: 45vw;
             margin-top: 12px;
+            align-items: center;
+            right: 47vw;
         }
         // button {
         //     background: none;
@@ -36,12 +39,12 @@ body {
     }
 
     .signup {
-        border-radius: 5px;
-        a{
+        border-radius: 10px;
+        a {
+            border-radius: 5px;
             background-color: black;
-            color: white!important;
+            color: white !important;
 
-           
             &:hover {
                 border-radius: 5px;
                 border: 1px solid black;
@@ -67,6 +70,8 @@ body {
         font-size: 16px;
         line-height: 1.7;
         font-weight: 400;
+        line-height: 30px;
+        color: #888888;
     }
     a {
         border: 1.5px solid #150c21;
@@ -90,44 +95,44 @@ body {
 
     // }
 }
-.row{
-    .flow1{
-        z-index: -1;
-        position: absolute;
+.bgtwo{
+    background-image: url(/styles/img/circleBackground.svg);
+    background-repeat: no-repeat;
+    background-position: right ;
+    
+}
+// .row {
+//     .flow1 {
+//         z-index: -2;
+//         position: absolute;
+//         top: -250px;
+//         right: 60px;
+//     }
+// }
+.flow2 {
+    .fluid {
+        display: none;
+        @media screen and (max-width: 800px) {
+            display: flex;
         }
     }
-    .flow2{
-        .fluid{
-            display: none;
-            @media screen and (max-width:800px) {
-                display: flex;
-            }
-        }
-    }
-
+}
 
 .course:hover {
     border-bottom: 2px solid black;
 }
-@media screen and(max-width:980px){
-    .form-control{
+@media screen and(max-width:980px) {
+    .form-control {
         display: none;
     }
-
-    
-    
 }
-@media screen and(max-width:980px){
-    .bi{
+@media screen and(max-width:980px) {
+    .bi {
         display: none;
     }
-    
 }
-@media screen and(max-width:980px){
-    .flow{
+@media screen and(max-width:980px) {
+    .flow {
         display: none;
     }
-    
 }
-
-
